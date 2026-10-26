@@ -23,8 +23,8 @@ components used to implement SDES
 
 Some of these components are buggy and had to be patched in the fully assembled circuit
 
-16to2 rom has a broken decoder and also allows signals from output bit 1 to leak into bit 0
-- this impacts sbox0 and sbox1 which are built on the rom
+- 16to2 rom has a broken decoder and also allows signals from output bit 1 to leak into bit 0
+    - this impacts sbox0 and sbox1 which are built on the rom
 
-nibbleshift, p8, and p4 use pistons to transmit signals downwards which tend to be unreliable, they can be replaced with spiral staircases
-fiestal rounds are broken as a result of bugged components
+- nibbleshift, p8, and p4 use pistons to transmit signals downwards which tend to be unreliable, they can be replaced with spiral staircases
+- fiestal rounds are broken as a result of bugged components
