@@ -12,3 +12,11 @@ would recommend speeding up the tick rate because each cycle is configured to ta
 
 
 #![circuit](./area_render.png)
+
+version 2.0 I have some things I want to change
+
+- move output RAM bank closer to output display instead of having a cursed 32 byte bus (blue lines)
+- wire permutation design is inoptimal, and can probably be automated
+- explore alternate more compact rom bank designs
+- unit test the cipher by testing and comparing all 256 inputs for a given key against [fiestal.py](./fiestal.py)
+    - (i have something wip where I launch a mc server and automatically load a schematic w/inputs a bunch of times)
